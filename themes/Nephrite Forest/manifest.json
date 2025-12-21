@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "version": "0.1",
+  "name": "Nephrite Chrome Theme - Forest",
+  "theme": {
+    "colors": {
+      "frame": [17, 31, 23],
+      "frame_inactive": [12, 23, 17],
+      "toolbar": [22, 41, 30],
+      "tab_text": [255, 255, 255],
+      "tab_background_text": [255, 255, 255],
+      "bookmark_text": [255, 255, 255],
+      "ntp_background": [17, 31, 23],
+      "ntp_text": [255, 255, 255]
+    },
+    "tints": {
+      "buttons": [0, 0, 1]
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}
