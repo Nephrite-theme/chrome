@@ -28,7 +28,7 @@ This repository contains the official **Nephrite themes for Google Chrome**.
 <summary><strong>Forest</strong></summary>
 
 <br />
-<img src="./assets/Nephrite%20Forest.png" alt="Nephrite Forest" width="1280" height="720" />
+<img src="./assets/Forest/Nephrite Forest.png" alt="Nephrite Forest" width="1280" height="720" />
 
 </details>
 
@@ -36,7 +36,7 @@ This repository contains the official **Nephrite themes for Google Chrome**.
 <summary><strong>Jade</strong></summary>
 
 <br />
-<img src="./assets/Nephrite%20Jade.png" alt="Nephrite Jade" width="1280" height="720" />
+<img src="./assets/Jade/Nephrite Jade.png" alt="Nephrite Jade" width="1280" height="720" />
 
 </details>
 
@@ -44,7 +44,7 @@ This repository contains the official **Nephrite themes for Google Chrome**.
 <summary><strong>Mint</strong></summary>
 
 <br />
-<img src="./assets/Nephrite%20Mint.png" alt="Nephrite Mint" width="1280" height="720" />
+<img src="./assets/Mint/Nephrite Mint.png" alt="Nephrite Mint" width="1280" height="720" />
 
 </details>
 
@@ -54,11 +54,11 @@ This repository contains the official **Nephrite themes for Google Chrome**.
 
 Install the themes directly from the Chrome Web Store:
 
-🌳 [Forest](https://chrome.google.com/webstore/detail/XXXXXXXX)
+🌳 [Forest](https://chromewebstore.google.com/detail/nephrite-chrome-theme-for/efhfempmenojdgamociancffkcbncffp)
 
-💚 [Jade](https://chrome.google.com/webstore/detail/XXXXXXXX)
+💚 [Jade](https://chromewebstore.google.com/detail/nephrite-chrome-theme-jad/ijmbncbgabefgapchogbdnhfgbiiimcm)
 
-🌿 [Mint](https://chrome.google.com/webstore/detail/XXXXXXXX)
+🌿 [Mint](https://chromewebstore.google.com/detail/nephrite-chrome-theme-min/ogfckpiocojbdmefjoogcmjmgfofijpg)
 
 Chrome will apply the selected theme automatically after installation.
 
