@@ -1,91 +1,45 @@
 <div align="center">
 
-<img src="./icons/icon128.png" alt="Nephrite Logo" width="128" height="128">
+<img src="https://raw.githubusercontent.com/Nephrite-theme/web/main/public/logo.svg" alt="Nephrite logo" width="72" height="72">
 
-### Nephrite for [Chrome](https://www.google.com/chrome/)
+# Nephrite for Chrome
 
-A calm, mineral-inspired collection of Google Chrome themes built around balance,
-focus, and natural color harmony.
+**English** · [Español](README.es.md)
 
-<br />
+A calm, jade-inspired theme for [Google Chrome](https://www.google.com/chrome/), in three flavors.
 
-<img src="https://img.shields.io/github/stars/Nephrite-Theme/chrome?style=for-the-badge"/>
-<img src="https://img.shields.io/github/contributors/Nephrite-Theme/chrome?style=for-the-badge" />
+[![License: MIT](https://img.shields.io/badge/license-MIT-3db87a)](LICENSE)
+[![Palette](https://img.shields.io/badge/palette-Nephrite-1f6b45)](https://github.com/Nephrite-theme/palette)
+[![Stars](https://img.shields.io/github/stars/Nephrite-theme/chrome?color=3db87a)](https://github.com/Nephrite-theme/chrome/stargazers)
 
 </div>
 
-## 🌿 About Nephrite
+## Flavors
 
-**Nephrite** is a community-driven color system inspired by natural minerals and stones.  
-Its goal is to create visually calm, consistent themes that can be reused across tools,
-apps, and platforms.
+| Flavor | Colors | For | Install |
+| --- | --- | --- | --- |
+| **Forest** | <img src="https://raw.githubusercontent.com/Nephrite-theme/palette/main/assets/forest.svg" alt="Forest swatches" width="220"> | Deep and dark, for late nights | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-for/efhfempmenojdgamociancffkcbncffp) |
+| **Jade** | <img src="https://raw.githubusercontent.com/Nephrite-theme/palette/main/assets/jade.svg" alt="Jade swatches" width="220"> | Dark with more green, for long days | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-jad/ijmbncbgabefgapchogbdnhfgbiiimcm) |
+| **Mint** | <img src="https://raw.githubusercontent.com/Nephrite-theme/palette/main/assets/mint.svg" alt="Mint swatches" width="220"> | Light and airy, for daylight | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-min/ogfckpiocojbdmefjoogcmjmgfofijpg) |
 
-This repository contains the official **Nephrite themes for Google Chrome**.
+> [!NOTE]
+> Version 0.2 rebuilds every flavor from the Nephrite palette, and Jade is now a dark flavor. New screenshots are on the way.
 
-## 🎨 Previews
+## Install
 
-<details>
-<summary><strong>Forest</strong></summary>
+### From the Chrome Web Store (recommended)
 
-<br />
-<img src="./assets/Forest/Nephrite Forest.png" alt="Nephrite Forest" width="1280" height="720" />
+Open the store link for the flavor you want and click **Add to Chrome**. Installing another flavor replaces the current one.
 
-</details>
+### Manually
 
-<details>
-<summary><strong>Jade</strong></summary>
+1. Click **Code > Download ZIP** and unzip it. Each flavor lives in its own folder under `themes/`, for example `themes/Nephrite Forest`.
+2. Open `chrome://extensions` and turn on **Developer mode** (top right).
+3. Click **Load unpacked** and select the flavor's folder, the one containing `manifest.json`.
 
-<br />
-<img src="./assets/Jade/Nephrite Jade.png" alt="Nephrite Jade" width="1280" height="720" />
+To go back to the default look, open `chrome://settings/appearance` and click **Reset to default**.
 
-</details>
-
-<details>
-<summary><strong>Mint</strong></summary>
-
-<br />
-<img src="./assets/Mint/Nephrite Mint.png" alt="Nephrite Mint" width="1280" height="720" />
-
-</details>
-
-## 🚀 How to use
-
-### 👉 Option 1 — Install from Google Chrome Web Store (recommended)
-
-Install the themes directly from the Chrome Web Store:
-
-🌳 [Forest](https://chromewebstore.google.com/detail/nephrite-chrome-theme-for/efhfempmenojdgamociancffkcbncffp)
-
-💚 [Jade](https://chromewebstore.google.com/detail/nephrite-chrome-theme-jad/ijmbncbgabefgapchogbdnhfgbiiimcm)
-
-🌿 [Mint](https://chromewebstore.google.com/detail/nephrite-chrome-theme-min/ogfckpiocojbdmefjoogcmjmgfofijpg)
-
-Chrome will apply the selected theme automatically after installation.
-
-### 👉 Option 2 — Manual installation:
-
-If you want to install a theme manually:
-
-#### 1️⃣ Download the repository
-
-Click **Code > Download ZIP** and unzip it. Each flavor lives in its own folder under `themes/` (for example `themes/Nephrite Forest`).
-
-#### 2️⃣ Open Chrome Extensions
-
-Go to:
-chrome://extensions
-
-#### 3️⃣ Enable Developer Mode
-
-Toggle **Developer mode** (top right corner).
-
-#### 4️⃣ Load the theme
-
-Click **Load unpacked** and select the flavor's folder, the one containing `manifest.json`.
-
-The theme will be applied immediately.
-
-## 🎨 Colors
+## Colors
 
 Every color comes from the [Nephrite palette](https://github.com/Nephrite-theme/palette), mapped to Chrome by role:
 
@@ -98,6 +52,8 @@ Every color comes from the [Nephrite palette](https://github.com/Nephrite-theme/
 | Inactive tabs, bookmarks, toolbar icons | `subtext` |
 | Links on the new tab page | `jade` |
 
+## Development
+
 The manifests in `themes/` are generated, so don't edit them by hand. To pick up palette changes:
 
 ```sh
@@ -105,41 +61,16 @@ node scripts/sync-palette.mjs   # download the latest palette.json
 node scripts/build.mjs          # regenerate the three manifests
 ```
 
-To publish an update, bump `VERSION` in `scripts/build.mjs`, rebuild, and upload each flavor folder as a ZIP to the Chrome Web Store.
+To publish an update, bump `VERSION` in `scripts/build.mjs`, rebuild, and upload each flavor folder as a ZIP to its Chrome Web Store listing. Node 18 or newer, no dependencies.
 
-## 🤝 Contributing
+## Contributing
 
-Nephrite is meant to be **community-driven** 🌱
+Found a color that clashes or low contrast? [Open an issue](https://github.com/Nephrite-theme/chrome/issues/new/choose) with a screenshot. For how Nephrite ports are built and reviewed, see the [contributing guide](https://github.com/Nephrite-theme/.github/blob/main/CONTRIBUTING.md).
 
-You can help by:
+## Thanks
 
-- Improving color balance
-- Creating new theme variants (Mint, Forest, etc.)
-- Adding support for other platforms
-- Improving documentation
+Created and maintained by [@ingfranciscastillo](https://github.com/ingfranciscastillo). Contributors will be listed here as the community grows.
 
-Feel free to open:
+## More Nephrite
 
-- Issues
-- Pull Requests
-- Discussions
-
-## 💚 Thanks
-
-This project currently exists thanks to:
-
-- **Francis** — creator, maintainer, and contributor
-
-More contributors will be added here as the community grows ✨
-
-## 📄 License
-
-This project is open-source and available under the **MIT License**.
-
-You are free to use, modify, and share it.
-
-<div align="center">
-
-🌿 **Nephrite — colors inspired by nature, built by community** 🌿
-
-</div>
+Nephrite is coming to Firefox, VS Code and more. See every app at [getnephrite.dev/ports](https://getnephrite.dev/ports).
