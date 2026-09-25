@@ -63,17 +63,6 @@ node scripts/build.mjs          # regenerate the three manifests
 
 To publish an update, bump `VERSION` in `scripts/build.mjs`, rebuild, and upload each flavor folder as a ZIP to its Chrome Web Store listing. Node 18 or newer, no dependencies.
 
-### Screenshots
-
-`scripts/screenshot-session.ps1` (Windows, PowerShell) opens Chrome in a throwaway profile at a fixed size and scale, so every flavor is captured the same way:
-
-```powershell
-.\scripts\screenshot-session.ps1 -Flavor Forest            # Chrome Dev, 1.25x (fits a 1080p screen)
-.\scripts\screenshot-session.ps1 -Flavor Jade -Channel Stable -Scale 2
-```
-
-The first time per flavor, load the theme from `chrome://extensions` (the path is copied to your clipboard).
-
 ## Contributing
 
 Found a color that clashes or low contrast? [Open an issue](https://github.com/Nephrite-theme/chrome/issues/new/choose) with a screenshot. For how Nephrite ports are built and reviewed, see the [contributing guide](https://github.com/Nephrite-theme/.github/blob/main/CONTRIBUTING.md).

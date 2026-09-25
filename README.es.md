@@ -63,17 +63,6 @@ node scripts/build.mjs          # regenera los tres manifiestos
 
 Para publicar una actualización, sube `VERSION` en `scripts/build.mjs`, regenera y sube cada carpeta de sabor en ZIP a su ficha de la Chrome Web Store. Requiere Node 18 o superior, sin dependencias.
 
-### Capturas
-
-`scripts/screenshot-session.ps1` (Windows, PowerShell) abre Chrome en un perfil desechable con tamaño y escala fijos, para capturar cada sabor igual:
-
-```powershell
-.\scripts\screenshot-session.ps1 -Flavor Forest            # Chrome Dev, 1.25x (cabe en pantallas 1080p)
-.\scripts\screenshot-session.ps1 -Flavor Jade -Channel Stable -Scale 2
-```
-
-La primera vez con cada sabor, carga el tema desde `chrome://extensions` (la ruta queda copiada en tu portapapeles).
-
 ## Contribuir
 
 ¿Un color que choca o poco contraste? [Abre un issue](https://github.com/Nephrite-theme/chrome/issues/new/choose) con una captura. Para saber cómo se crean y revisan los ports de Nephrite, lee la [guía para contribuir](https://github.com/Nephrite-theme/.github/blob/main/CONTRIBUTING.es.md).
