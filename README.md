@@ -23,7 +23,14 @@ A calm, jade-inspired theme for [Google Chrome](https://www.google.com/chrome/),
 | **Mint** | <img src="https://raw.githubusercontent.com/Nephrite-theme/palette/main/assets/mint.svg" alt="Mint swatches" width="220"> | Light and airy, for daylight | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-min/ogfckpiocojbdmefjoogcmjmgfofijpg) |
 
 > [!NOTE]
-> Version 0.2 rebuilds every flavor from the Nephrite palette, and Jade is now a dark flavor. New screenshots are on the way.
+> Version 0.2 rebuilds every flavor from the Nephrite palette, and Jade is now a dark flavor.
+
+## Previews
+
+| Forest | Jade | Mint |
+| --- | --- | --- |
+| ![Forest on GitHub](assets/forest-page.webp) | ![Jade on GitHub](assets/jade-page.webp) | ![Mint on GitHub](assets/mint-page.webp) |
+| ![Forest new tab](assets/forest-ntp.webp) | ![Jade new tab](assets/jade-ntp.webp) | ![Mint new tab](assets/mint-ntp.webp) |
 
 ## Install
 
