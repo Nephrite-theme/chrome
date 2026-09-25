@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "version": "0.2",
+  "name": "Nephrite Chrome Theme - Jade",
+  "description": "A calm, jade-inspired theme for Chrome. Jade flavor of the Nephrite palette.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [14, 36, 25],
+      "frame_inactive": [11, 29, 19],
+      "frame_incognito": [11, 29, 19],
+      "frame_incognito_inactive": [11, 29, 19],
+      "toolbar": [19, 46, 32],
+      "toolbar_text": [231, 242, 235],
+      "toolbar_button_icon": [189, 204, 195],
+      "tab_text": [231, 242, 235],
+      "tab_background_text": [189, 204, 195],
+      "tab_background_text_inactive": [127, 145, 135],
+      "bookmark_text": [189, 204, 195],
+      "ntp_background": [19, 46, 32],
+      "ntp_text": [231, 242, 235],
+      "ntp_link": [77, 191, 116],
+      "omnibox_background": [32, 57, 44],
+      "omnibox_text": [231, 242, 235]
+    }
+  }
+}

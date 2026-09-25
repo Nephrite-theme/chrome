@@ -68,7 +68,7 @@ If you want to install a theme manually:
 
 #### 1️⃣ Download the repository
 
-Go to themes and download the
+Click **Code > Download ZIP** and unzip it. Each flavor lives in its own folder under `themes/` (for example `themes/Nephrite Forest`).
 
 #### 2️⃣ Open Chrome Extensions
 
@@ -81,9 +81,31 @@ Toggle **Developer mode** (top right corner).
 
 #### 4️⃣ Load the theme
 
-Click **Load unpacked** and select the folder containing `manifest.json`.
+Click **Load unpacked** and select the flavor's folder, the one containing `manifest.json`.
 
 The theme will be applied immediately.
+
+## 🎨 Colors
+
+Every color comes from the [Nephrite palette](https://github.com/Nephrite-theme/palette), mapped to Chrome by role:
+
+| Chrome surface | Palette color |
+| --- | --- |
+| Tab strip (frame) | `mantle`, `crust` when the window is inactive |
+| Active tab, toolbar, new tab page | `base` |
+| Address bar | `surface0` |
+| Main text | `text` |
+| Inactive tabs, bookmarks, toolbar icons | `subtext` |
+| Links on the new tab page | `jade` |
+
+The manifests in `themes/` are generated, so don't edit them by hand. To pick up palette changes:
+
+```sh
+node scripts/sync-palette.mjs   # download the latest palette.json
+node scripts/build.mjs          # regenerate the three manifests
+```
+
+To publish an update, bump `VERSION` in `scripts/build.mjs`, rebuild, and upload each flavor folder as a ZIP to the Chrome Web Store.
 
 ## 🤝 Contributing
 

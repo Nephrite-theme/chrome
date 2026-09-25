@@ -1,25 +1,31 @@
 {
   "manifest_version": 3,
-  "version": "0.1",
+  "version": "0.2",
   "name": "Nephrite Chrome Theme - Forest",
+  "description": "A calm, jade-inspired theme for Chrome. Forest flavor of the Nephrite palette.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "theme": {
     "colors": {
-      "frame": [17, 31, 23],
-      "frame_inactive": [12, 23, 17],
-      "toolbar": [22, 41, 30],
-      "tab_text": [255, 255, 255],
-      "tab_background_text": [255, 255, 255],
-      "bookmark_text": [255, 255, 255],
-      "ntp_background": [17, 31, 23],
-      "ntp_text": [255, 255, 255]
-    },
-    "tints": {
-      "buttons": [0, 0, 1]
-    },
-    "icons": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+      "frame": [9, 21, 14],
+      "frame_inactive": [5, 14, 9],
+      "frame_incognito": [5, 14, 9],
+      "frame_incognito_inactive": [5, 14, 9],
+      "toolbar": [13, 28, 20],
+      "toolbar_text": [224, 235, 229],
+      "toolbar_button_icon": [180, 193, 186],
+      "tab_text": [224, 235, 229],
+      "tab_background_text": [180, 193, 186],
+      "tab_background_text_inactive": [118, 132, 124],
+      "bookmark_text": [180, 193, 186],
+      "ntp_background": [13, 28, 20],
+      "ntp_text": [224, 235, 229],
+      "ntp_link": [77, 191, 116],
+      "omnibox_background": [25, 40, 32],
+      "omnibox_text": [224, 235, 229]
     }
   }
 }
