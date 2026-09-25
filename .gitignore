@@ -1,3 +1,6 @@
 
 # Written by Chrome when a theme is loaded unpacked
 Cached Theme.pak
+
+# Packages built for the Chrome Web Store
+*.zip
