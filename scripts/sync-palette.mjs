@@ -3,7 +3,7 @@
 import { writeFile } from "node:fs/promises";
 
 const SOURCE =
-	"https://cdn.jsdelivr.net/gh/Nephrite-theme/palette@main/dist/palette.json";
+	"https://raw.githubusercontent.com/Nephrite-theme/palette/main/dist/palette.json";
 
 const res = await fetch(SOURCE);
 if (!res.ok) {
