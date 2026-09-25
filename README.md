@@ -16,11 +16,11 @@ A calm, jade-inspired theme for [Google Chrome](https://www.google.com/chrome/),
 
 ## Flavors
 
-| Flavor | Colors | For | Install |
+| Flavor | Colors used | For | Install |
 | --- | --- | --- | --- |
-| **Forest** | <img src="https://raw.githubusercontent.com/Nephrite-theme/palette/main/assets/forest.svg" alt="Forest swatches" width="220"> | Deep and dark, for late nights | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-for/efhfempmenojdgamociancffkcbncffp) |
-| **Jade** | <img src="https://raw.githubusercontent.com/Nephrite-theme/palette/main/assets/jade.svg" alt="Jade swatches" width="220"> | Dark with more green, for long days | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-jad/ijmbncbgabefgapchogbdnhfgbiiimcm) |
-| **Mint** | <img src="https://raw.githubusercontent.com/Nephrite-theme/palette/main/assets/mint.svg" alt="Mint swatches" width="220"> | Light and airy, for daylight | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-min/ogfckpiocojbdmefjoogcmjmgfofijpg) |
+| **Forest** | <img src="assets/forest.svg" alt="Forest swatches" width="260"> | Deep and dark, for late nights | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-for/efhfempmenojdgamociancffkcbncffp) |
+| **Jade** | <img src="assets/jade.svg" alt="Jade swatches" width="260"> | Dark with more green, for long days | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-jad/ijmbncbgabefgapchogbdnhfgbiiimcm) |
+| **Mint** | <img src="assets/mint.svg" alt="Mint swatches" width="260"> | Light and airy, for daylight | [Chrome Web Store](https://chromewebstore.google.com/detail/nephrite-chrome-theme-min/ogfckpiocojbdmefjoogcmjmgfofijpg) |
 
 > [!NOTE]
 > Version 0.2 rebuilds every flavor from the Nephrite palette, and Jade is now a dark flavor.

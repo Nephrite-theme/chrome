@@ -59,3 +59,28 @@ for (const [key, flavor] of Object.entries(palette.flavors)) {
 	writeFileSync(new URL("manifest.json", dir), `${json}\n`);
 	console.log(`${key}: themes/Nephrite ${flavor.name}/manifest.json v${VERSION}`);
 }
+
+// README swatches: only the palette colors this port actually uses, in
+// palette order, so the preview never promises colors the theme skips.
+const used = new Set(Object.values(ROLES));
+const usedKeys = [...palette.neutrals, ...palette.accents].filter((k) => used.has(k));
+mkdirSync(new URL("assets/", root), { recursive: true });
+for (const [key, flavor] of Object.entries(palette.flavors)) {
+	const c = flavor.colors;
+	const size = 44;
+	const gap = 10;
+	const pad = 14;
+	const w = pad * 2 + usedKeys.length * size + (usedKeys.length - 1) * gap;
+	const h = pad * 2 + size + 22;
+	const cells = usedKeys
+		.map((k, i) => {
+			const x = pad + i * (size + gap);
+			return `<rect x="${x}" y="${pad}" width="${size}" height="${size}" rx="10" fill="${c[k]}" stroke="${c.surface1}" stroke-width="1"/><text x="${x + size / 2}" y="${pad + size + 16}" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="${c.subtext}">${k}</text>`;
+		})
+		.join("");
+	writeFileSync(
+		new URL(`assets/${key}.svg`, root),
+		`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><rect width="100%" height="100%" rx="14" fill="${c.base}"/>${cells}</svg>\n`,
+	);
+}
+console.log(`swatches: ${usedKeys.length} colors (${usedKeys.join(", ")})`);
